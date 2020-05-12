@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('./fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
+    url('./fonts/FoundersGrotesk-Regular.woff') format('woff'),
+    url('./fonts/FoundersGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Founders Grotesk', sans-serif;
+  font-weight: normal;
+}
+
+p,
+span {
+  line-height: 1.1;
+}
+
+.app__container {
+  max-width: 1920px;
+  padding-top: 30px;
+}
+
+@media (min-width: 991px) {
+  .app__article {
+    display: flex;
+  }
+  .app__main {
+    flex: auto;
+  }
+}

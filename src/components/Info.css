@@ -1,0 +1,85 @@
+.app__main--info {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+/* TYPOGRAPHY */
+.app__main--info h2,
+.app__main--info h3,
+.app__main--info h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.app__main--info h2 {
+  font-size: 2rem;
+}
+
+.app__main--info p {
+  font-size: 1.2rem;
+}
+
+/* BLOCKS */
+.info__artists-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.info__space-institution {
+  margin-top: 100px;
+}
+
+.info__artists,
+.info__subtitle {
+  margin-top: 100px;
+}
+
+.info__main-text .info__main-text-content,
+.info__artists {
+  max-width: 500px;
+}
+
+.info__logos {
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10%;
+}
+
+.info__logos-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (min-width: 991px) {
+  .app__main--info {
+    flex-direction: row;
+    padding: 0 15px;
+  }
+
+  .info__main-text {
+    flex: 60% 0 0;
+    padding: 0 5%;
+  }
+
+  .info__logos,
+  .info__artists {
+    flex: 20% 0 0;
+  }
+
+  .info__artists {
+    margin-top: 0;
+  }
+
+  .info__logos {
+    position: sticky;
+    top: 30px;
+    max-height: calc(100vh - 60px);
+    padding: 0;
+    margin: 0;
+    align-items: flex-end;
+  }
+}

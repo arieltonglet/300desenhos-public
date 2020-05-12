@@ -1,0 +1,37 @@
+.work__figure,
+.work__image {
+  max-width: 100%;
+  max-height: calc(100vh - 60px);
+  margin: 0;
+}
+
+.work__text,
+.work__text span {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.work__text.work__text--artist {
+  margin-bottom: 2em;
+}
+
+.work__kicker {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+@media (min-width: 991px) {
+  .work__figure {
+    display: flex;
+  }
+
+  .work__image {
+    margin-left: auto;
+  }
+
+  .work__kicker {
+    margin-top: 0;
+  }
+}
